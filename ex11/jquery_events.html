@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Load jQuery -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+
+<p id="p1"> Click me and I disappear. </p>
+<p id="p2"> Doubleclick me and I slide away. </p>
+<p id="p3"> Click me and I resize. </p>
+<p id="p4"> Hover over me and this text will be shown in a popup. </p>
+	
+<script>
+	// Add event listeners.
+	$(document).ready(function(){
+		$("p").css("font-weight","Bold");
+		$("#p3").css("background-color","BlanchedAlmond ");
+		
+		$("#p1").click(function() {
+			$(this).hide();
+		});
+		
+		$("#p2").dblclick(function() {
+			$(this).slideUp();
+		});
+		
+		$("#p3").click(function() {
+			$(this).animate({
+				height: '+=150px',
+				width: '-=150px'
+			});
+		});	
+
+		$("#p4").hover(function() {
+			alert($(this).text());
+		});			
+	});
+	
+</script>
+
+</body>
+</html>
+ 

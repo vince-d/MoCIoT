@@ -1,35 +1,16 @@
 <!DOCTYPE html>
 <html>
 <body>
-
- <canvas id="myCanvas" width="600" height="600" style="border:1px solid #000000;">
-</canvas> 
-
-<script>
-
-window.ondevicemotion = function(event) { 
-	ralpha = event.rotationRate.alpha;
-	rbeta = event.rotationRate.beta;
-	rgamma = event.rotationRate.gamma;
-	
-	var img = new Image();
-	img.src = "teco.jpg";
-	half_width = img.naturalWidth / 2;
-	half_height = img.naturalHeight / 2;
-
-	var c = document.getElementById("myCanvas");
-	var context = c.getContext("2d");
-	var canvasWidth = 600;
-	var canvasHeight = 600; 
-	
-	context.clearRect(0, 0, canvasWidth, canvasHeight);
-	context.translate(canvasWidth/2, canvasWidth/2);
-	context.rotate( 0.895 * rgamma * (Math.PI / 180));
-	context.translate(-canvasWidth/2, -canvasWidth/2);
-	context.drawImage(img, canvasWidth/2 - half_width, canvasHeight/2 - half_height);
-}
-
-</script>
-
+	<a href="ex1\index.html">HTML</a><br />
+	<a href="ex2\index.html">CSS</a><br />
+	<a href="ex3\index.html">Basic JS</a><br />
+	<a href="ex4\index.html">Video</a><br />
+	<a href="ex5\index.html">User Agent per JS</a><br />
+	<a href="ex6\index.html">Camera</a><br />
+	<a href="ex7\index.html">Geolocation</a><br />
+	<a href="ex8\index.html">Sensors</a><br />
+	<a href="ex9\index.html">Rotating Image</a><br />
+	<a href="ex10\index.html">AJAX</a><br />
+	<a href="ex11\index.html">jQuery</a><br />
 </body>
 </html>

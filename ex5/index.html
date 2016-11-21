@@ -1,0 +1,104 @@
+<!doctype html>
+
+<head>
+	<title>Raspberry Pi</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Vincent Diener">
+	<meta name="description" content="Eine Raspberry Pi Webseite.">
+	<script src="js/script.js"></script>
+	<!-- Stylesheet is dynamically loaded by JS function selectFittingCSS() on page load.-->
+</head>
+
+<body onload="selectFittingCSS();">
+
+	<header>
+		<h1> Raspberry Pi <img src="img/logo.png" width="80" height="40" alt="Raspberry Pi Logo"></h1>	
+	</header>
+	
+	<table id="normalMenu">
+		<tr>
+			<td><a href="javascript:void(0)" onclick="selectSection(0);">Hintergrund</a></td>
+			<td><a href="javascript:void(0)" onclick="selectSection(1);">Idee</a></td>
+			<td><a href="javascript:void(0)" onclick="selectSection(2);">Namensgebung</a></td>
+			<td><a href="javascript:void(0)" onclick="selectSection(3);">Entwicklung</a></td>
+			<td><a href="javascript:void(0)" onclick="selectSection(4);">Reaktionen</a></td>
+		</tr>
+	</table>
+
+	<table id="mobileMenu">
+		<tr>
+			<td><a href="javascript:void(0)" onclick="selectSection(0);">Hintergrund</a></td>
+		</tr>
+		<tr>
+			<td><a href="javascript:void(0)" onclick="selectSection(1);">Idee</a></td>
+		</tr>
+		<tr>
+			<td><a href="javascript:void(0)" onclick="selectSection(2);">Namensgebung</a></td>
+		</tr>
+		<tr>
+			<td><a href="javascript:void(0)" onclick="selectSection(3);">Entwicklung</a></td>
+		</tr>
+		<tr>
+			<td><a href="javascript:void(0)" onclick="selectSection(4);">Reaktionen</a></td>
+		</tr>
+	</table>
+	
+	<!-- Start content section -->
+	<section id="hintergrund">
+		<p>
+			Der Raspberry Pi ist ein kreditkartengroser Einplatinencomputer, der von der britischen Raspberry Pi Foundation entwickelt wurde.
+
+			Der im Vergleich zu &uuml;blichen Personal Computern sehr einfach aufgebaute und mit 25 beziehungsweise 35 US-Dollar preisg&uuml;nstige Rechner wurde von der Stiftung mit dem Ziel entwickelt, jungen Menschen den Erwerb von Programmier- und Hardwarekenntnissen zu erleichtern. Die Platine enth&auml;lt ein Ein-Chip-System von Broadcom mit einem 700-MHz-ARM11-Prozessor sowie je nach Modell 256 oder 512 MB Arbeitsspeicher. Das Modell B hat zus&auml;tzlich eine Ethernet-Schnittstelle und einen zweiten USB-Anschluss. Als Betriebssystem k&ouml;nnen angepasste Linuxversionen, Android oder andere Betriebssysteme installiert werden, welche die ARM-Architektur unterst&uuml;tzen. Eine eigene Festplatten-Schnittstelle ist nicht vorhanden, stattdessen k&ouml;nnen SD-Speicherkarten als Bootmedium genutzt werden.
+			<br><br>
+			Bis Marz 2014 wurden mehr als 2,5 Millionen Ger&auml;te verkauft. Die Entwickler des Raspberry Pi wurden mit mehreren Innovationspreisen ausgezeichnet. Es existiert ein groses Zubeh&ouml;r- und Softwareangebot f&uuml;r verschiedenste Anwendungsbereiche. Eine verbreitete Anwendung ist die als Mediacenter, da der Rechner Videodaten mit voller HD-Auflosung (1080p) verarbeiten und uber die serienm&auml;sige HDMI-Schnittstelle ausgeben kann.
+		</p>
+	</section>
+	<section id="idee" class="content">
+		<p>
+			Das Motiv hinter der Entwicklung eines preisg&uuml;nstigen Rechners war die sinkende Anzahl an Informatikstudenten an der Universitat Cambridge, sowie deren schlechter werdende Vorkenntnisse der Programmierung. F&uuml;r einen der Grunde hielt man, dass Computer heute in der Regel teuer und komplex sind und Eltern ihren Kindern deswegen h&auml;ufig verbieten, mit dem Familien-PC zu experimentieren. Man wollte daher Jugendlichen einen g&uuml;nstigen Computer zum Experimentieren und Erlernen des Programmierens an die Hand geben. Dabei hoffte man, dass sie wie in der Anfangszeit der Heimcomputer (z. B. IMSAI 8080, Apple I, Sinclair ZX80) die Computergrundlagen und -programmierung spielerisch erlernen w&uuml;rden.
+		</p>
+	</section>
+	<section id="namensgebung" class="content">
+		<p>
+			Der Name wird wie raspberry pie ausgesprochen, das englische Wort f&uuml;r Himbeerkuchen. Das Pi steht fur Python interpreter, urspr&uuml;nglich sollte der Rechner mit fest eingebautem Interpreter f&uuml;r die Programmiersprache Python geliefert werden, &auml;hnlich wie bei den Heimcomputern der achtziger Jahre fast durchweg ein BASIC-Interpreter eingebaut war. Die Himbeere kn&uuml;pft an die Tradition an, Computer nach Fr&uuml;chten zu benennen, wie etwa Apple oder Acorn.
+			<br><br>
+			Das Logo des Projekts wurde im Rahmen eines &ouml;ffentlich ausgeschriebenen Wettbewerbs ausgewahlt. Es zeigt eine stilisierte Himbeere, deren Form von einer geodatischen Kuppel abgeleitet ist.
+		</p>
+	</section>
+	<section id="entwicklung" class="content">
+		<p>
+			Ein Prototyp mit einem Atmel-ATmega644-Mikrocontroller wurde im Jahr 2006 produziert. Die Schaltpl&auml;ne der Platine wurden ver&ouml;ffentlicht.
+			<br><br>
+			Die Leistungen des Ger&auml;tes &uuml;berzeugten die Entwickler nicht. Wegen des damals beginnenden Boom von Smartphones kamen jedoch geeignete ARM-Prozessoren auf den Markt. Man fand mit dem BCM2835 einen g&uuml;nstigen Prozessor mit verh&auml;ltnism&auml;sig hoher Leistung und entwarf fur diese CPU eine neue Mehrlagenplatine. Fur den Atmel war man noch mit einer Lochrasterplatine ausgekommen.
+			<br><br>
+			50 Alpha-Boards wurden im August 2011 geliefert. Diese Platinen waren funktional identisch mit dem sp&auml;teren Modell B des Raspberry Pi, aber gr&ouml;ser, um Messpunkte zur Fehlersuche zu beherbergen. Die Verkaufsversion hat die Gr&ouml;se einer Kreditkarte. Auf diesen Versuchsplatinen wurde bereits gezeigt, dass die Desktop-Umgebung LXDE unter Debian sowie Quake 3 und H.264-Videos mit einer Aufl&ouml;sung von 1080p via HDMI funktionieren. Seit Herbst 2012 wird eine leicht ver&auml;nderte Version 2 verkauft. Sie hat zwei Befestigungsl&ouml;cher und einige Pins sind anders belegt. Etwa gleichzeitig konnte wegen der unerwartet grosen Verkaufszahlen auch die Produktion von China nach Wales verlegt werden und der Speicher des B-Modells auf 512 MB verdoppelt werden. Inzwischen (Stand: Marz 2014) wurden 2.5 Millionen Ger&auml;te verkauft, wovon &uuml;ber eine Million in Wales produziert wurde.
+			<br><br>
+			Am 14. Mai 2013 kam ein Kameramodul fur den Raspberry Pi in den Handel. Eine Variante ohne Infrarotfilter ist unter der Bezeichnung Pi NoIR erh&auml;ltlich (November 2013).
+			Raspberry Pi Compute Module
+			<br><br>
+			Am 7. April 2014 wurde das Raspberry Pi Compute Module, einen Raspberry Pi in der Gr&ouml;se und dem Aussehen eines DDR2-SODIMM-Speicherriegels, angek&uuml;ndigt. Das Modell soll den technischen Spezifikationen des Model B entsprechen, ohne &uuml;ber eigene IO-Anschlusse zu verf&uuml;gen, welche jedoch uber ein optionales IO-Board nachger&uuml;stet werden k&ouml;nnen.
+		</p>
+	</section>
+	<section id="reaktion" class="content">
+		<p>
+			Wegen des g&uuml;nstigen Preises und der geringen Leistungsaufnahme eignet sich der Raspberry Pi abseits der vorgesehenen Nutzung als Schulrechner insbesondere als Steuereinheit f&uuml;r Robotik-, Embeddedprojekte, Media Center, Thin Client oder Server.
+			<br><br>
+			Seit dem Verkauf des Raspberry Pi berichten vor allem technisch ausgerichtete Medien regelmasig &uuml;ber neue Projekte mit dem Raspberry Pi. Raspberry Pi wurde als Innovation des Jahres beim T3 Gadget Awards 2012 ausgezeichnet. Eben Upton, einer der Entwickler des Raspberry Pi, wurde 2013 mit der Silbermedaille der Royal Academy of Engineering ausgezeichnet.
+			<br><br>
+			Im Mai 2012 wurde die erste Ausgabe der Community-Zeitschrift MagPi ver&ouml;ffentlicht.[62] Das Magazin greift alle Themen rund um den Raspberry Pi auf. Seit Juni 2013 gibt es eine englische und seit August 2013 die deutschsprachige Zeitschrift Raspberry Pi Geek vom Medialinx Verlag.
+			<br><br>
+			Nach dem grosen Erfolg des Raspberry Pi kamen etliche &auml;hnliche Einplatinencomputer auf den Markt. Zu nennen sind hier insbesondere das Cubieboard mit einer schnelleren ARM-CPU und mehr Arbeitsspeicher f&uuml;r 49 US-Dollar und das auf dem BeagleBoard basierende BeagleBone Black von CircuitCo mit einem schnelleren Prozessor von Texas Instruments und einer gr&ouml;seren Anzahl an I/O-Schnittstellen f&uuml;r 45 US-Dollar. F&uuml;r die alternativen Systeme gibt es derzeit keine vergleichbar grosen Kern-Communitys.
+		</p>
+	</section>
+	<!-- End content section -->
+		
+	<input type="button" id="preferenceButton" value="Clear Preferences" onclick="clearPreferences();">
+	
+	<br>
+	
+	<footer>
+		F&uuml;r mehr Informationen, hier ein <a href="http://de.wikipedia.org/wiki/Raspberry_Pi">Link zu Wikipedia</a>.
+	</footer>
+	
+</body>
+</html>

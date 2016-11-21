@@ -1,0 +1,68 @@
+html {
+	font-family: "Verdana";
+    height: 100%;
+	min-width: 700px;
+}
+
+header {
+	height: 80px;
+	width: 100%;
+	background-color: black;
+	text-align: center;
+	line-height: 90px;
+	border-radius: 15px 15px 0px 0px; 
+}
+
+body {
+	margin: 40px 40px;
+	padding: 0px 20px;
+	height: fill-parent;
+	background-color: beige;
+}
+
+footer {
+	height: 100px;
+	line-height: 100px;
+	width: 100%;
+	background-color: black;
+	color: #FFFFFF;
+	text-align: center;
+	border-radius: 15px;
+	font-size: 1.3em;
+}
+
+.content {
+	display: none;
+}
+
+#mobileMenu {
+	display: none;
+}
+
+h1 {
+	font-size: 1.6em;
+	color: white;
+}
+
+#hintergrund {
+	background: url("../img/raspi_hq.jpg") right no-repeat transparent;
+	padding-right: 300px;
+}
+
+table {
+	font-size: 1.1em;
+	border: 3px solid black;
+	border-spacing: 5px;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+td {
+	border: 1px solid red;
+	background-color: #ffe4c4;
+}
+
+a {
+	color: red;
+}

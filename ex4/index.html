@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<head>
+	<!-- used charset (html5) -->
+	<meta charset="utf-8">
+
+	<title>The Raspberry Pi</title>
+
+	<!-- optimization of search-engine -->
+	<meta name="author" content="Me">
+	<meta name="description" content="Description of the content...">
+
+	<script src="js/script.js"></script>
+	
+	<!-- media query (CSS3) /  stylesheets -->
+	<link media="only screen and (max-width: 480px)" href="css/style.css" type= "text/css">
+	<link rel="stylesheet" href="css/style.css" title="main-template">
+
+</head>
+
+<body>
+	
+	<!-- new to HTML5: first part of a page-->
+	<header>
+		<!-- Heading 1 -->
+		<h1> The Raspberry Pi </h1>
+	</header>
+
+	<!-- new to HTML5: certain part of the page-->
+	<section>
+		<p>
+			The Raspberry Pi is a credit card-sized
+			single-board computer.
+			<br>
+			It was developed by the Raspberry Pi Foundation.
+
+			<table>
+				<tr>
+					<td></td>
+					<td> Model A </td>
+					<td> Model B </td>
+				</tr>
+				<tr>
+					<td> RAM </td>
+					<td> 256 MB </td>
+					<td style="font-weight: bold"> 512 MB </td>
+				</tr>
+				<tr>
+					<td> Preis </td>
+					<td style="font-weight: bold"> 25 USD </td>
+					<td> 35 USD </td>
+				</tr>
+			</table>
+
+		<p class="blueFont">
+			Check out this <a href="http://en.wikipedia.org/wiki/Raspberry_Pi">link</a>.
+			<br>
+			And finally a picture:
+		</p>
+
+		<img src="img\raspi.jpg" width="400" height="250" alt="Raspberry Pi" title="Raspberry Pi">
+
+		<p id="hugeText">
+			This text is huge!
+		</p>
+
+		<!-- new to HTML5: type="number" or type="email" or type="tel"-->
+		<input type="email" id="text1" value="button's new name" />
+		<input type="button" value="Name me!" id="button1" onclick="changeButton()" />
+
+		<br>
+		<input id="slider1" type="range" min="100" max="500" step="10" onchange="printValue('slider1','rangeValue1')"/>
+		<input id="rangeValue1" type="text" size="2"/>
+
+		<br>
+		<br>
+		<!-- new to HTML5: video -->
+		<video width="400" height="230" controls>
+			<source src="video.mp4" type="video/mp4">
+			<source src="video.webm" type="video/webm">
+			I'm Sorry, your browser doesn't support HTML5 Videos with MP4.
+		</video>
+
+		<br>
+
+
+	</section>
+
+	<footer>
+		The end.
+	</footer>
+</body>
+</html>

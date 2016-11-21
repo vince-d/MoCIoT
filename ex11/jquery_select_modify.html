@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Load jQuery -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+
+<a href="http://www.kit.edu/"> Link to KIT Website </a> <br />
+
+<a href="https://en.wikipedia.org/"> Link to Wikipedia </a> <br />
+
+<p id="p1"> A list of things. </p>
+
+<div class="cities">
+	 <ol>
+		<li>New Yorm</li>
+		<li>Los Angeles</li>
+		<li>Chicago</li>
+		<li>Houston</li>
+		<li>Philadelphia</li>
+	</ol> 
+</div>
+
+<script>
+	// Called when the website is loaded and ready to execute jQuery code.
+	$(document).ready(function(){
+		// Element (Tag)
+		$("a").attr("href", "https://www.google.de/")
+		
+		// ID
+		$("#p1").html('Top 5 biggest cities in America');
+		
+		// Class
+		$(".cities").css("background-color", "yellow"); 
+		
+		// Other, such as :first, :last, ...
+		$("li:nth-child(2)").css("font-weight","Bold");
+		
+		// Many other options for selectors. For examples, see http://www.w3schools.com/jquery/trysel.asp
+	});
+</script>
+
+</body>
+</html>

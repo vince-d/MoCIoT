@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Load jQuery -->
+<head>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+
+<div id="demo">
+	<h1>jQuery AJAX Example</h1>
+	<button type="button" onclick="loadDoc()">Change Content</button>
+</div>
+
+<script>
+	function loadDoc() {
+		// Directly start AJAX request to URL with callback. 
+		$.ajax({url: "https://jsonplaceholder.typicode.com/posts/1",
+				type: "GET",
+				success: function(result){
+					$("#demo").append("<p>" + JSON.stringify(result) + "</p>");
+				}});
+
+	}
+</script>
+
+</body>
+</html>
+ 
