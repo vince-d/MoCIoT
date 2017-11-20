@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Responsive Font Size Example</title>
+	
+	<!-- Load the library script -->
+	<script src="js/accel_context_fontsize.js"></script>
+	
+	<!-- Load some CSS for site and button styling (optional) -->
+	<link rel="stylesheet" href="css/style.css" title="main-template">
+
+</head>
+
+<!--
+onload: Start responsive font size scaling using accelerometer values. Text in elements marked with the class "responsiveText" are scaled up if certain threshold is used.
+The parameters are: int accWindowLength, float accWindowThreshold, float smallFont, float bigFontSize
+	accWindowLength: Number of accelerometer values to use for calculating an average. 100 can take between 0.5 and 3.5 seconds, depending on the device.
+	accWindowThreshold: If the average exceeds this threshold, the font size is increased.
+	smallFont: Font size for the "standing" font.
+	bigFontSize: Font size for the "walking" font.
+-->
+<body onload="start(100, 1.65, 1.5, 4.5);">
+
+	<!-- Three buttons: Start library, stop library and toggle debug text visibility -->
+	<button type="button" class="btn-class" onclick="start(100, 1.65, 1.5, 4.5);">Start</button> 
+	<button type="button" class="btn-class" onclick="stop();">Stop</button> 
+	<button type="button" class="btn-class" onclick="toggleDebug();">Debug</button> 
+	
+	<!-- Debug text (set as responsive). ID has to be "debug" so the library can find it. -->
+	<p id="debug" class="responsiveText"></p>
+	
+	<!-- Example text (set as responsive) -->
+	<p id="content" class="responsiveText">
+	Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus 
+	
+	Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+	 
+	Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+	 
+	Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+	</p>
+	
+</body>
+</html>
